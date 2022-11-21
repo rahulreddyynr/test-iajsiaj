@@ -13,8 +13,15 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hello Infy !</h1>
-      <CustomCard />
+      {Data.map((item) => {
+        return (
+          <CustomCard
+            title={item.title}
+            auther={item.author}
+            Desc={item.Desi}
+          />
+        );
+      })}
     </div>
   );
 }
