@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './CustomCard.css';
+import defaultClass from './CustomCard.css';
 
 const Card = ({ title, auther, Desc }) => {
   return (
-    <div>
+    <div className={defaultClass.Conatiner}>
       <span>{title}</span>
       <span>{auther}</span>
     </div>
